@@ -1,0 +1,629 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;700&family=Noto+Sans+KR:wght@500&display=swap');
+@font-face {
+    font-family: 'SUIT-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+html {
+    height:100%;
+}
+body {
+    height:100%;
+    margin:0;
+    border:0;
+    padding:0;
+    overflow: hidden;
+}
+.wrap {
+    position:relative;
+    top:0;
+    width:100%;height:100%;
+    transition: 0.5s;
+}
+.container {
+    width:100%;height:100%;     position: relative;
+    overflow: hidden
+}
+.container:nth-child(1){background-color: rgb(255, 255, 255);}
+.container:nth-child(2){background-color: blue;}
+.container:nth-child(3){background-color: rgb(0, 0, 0);}
+.container:nth-child(4){background-color: rgb(255, 255, 255)!important;}
+.container:nth-child(5){background-color: gray;}
+
+#toTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#toTop:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid #4CAF50;
+}
+
+#logo1 {
+    position: absolute;
+    width: 554px;
+    height: 122px;
+    left: 730px;
+    top: 460px;
+    background: url('img/logo.png') no-repeat center center;
+    background-size: contain;
+
+}
+
+
+
+#canvasContainer1 {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('img/page1.jpg'); /* 여기에 배경 이미지 경로를 지정하세요. */
+    background-size: cover;
+    background-position: center;
+}
+/*... 기존 도형 CSS */
+#canvasContainer2 {
+    position: relative;
+}
+
+#aegja {
+    position: absolute;
+    left: 716px;
+    top: 177px;
+    
+    opacity: 0.3;
+}
+
+#aegja2{
+    position: absolute;
+    width: 100%;
+    height: 100vh;  
+    object-fit: contain;  
+}
+
+
+
+
+.text-overlay {
+    position: relative;
+}
+
+#po1 {
+    position: absolute;
+    width: 877px;
+    height: 89px;
+    left: 554px;
+    top: 390px;
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 104px;
+    letter-spacing: 0.05em;
+    color: #000000;
+    opacity: 0; /* 처음에는 안보이게 설정 */
+    transition: opacity 1s ease-in-out; /* 애니메이션 효과 */
+}
+
+#po2 {
+    position: absolute;
+    width: 829px;
+    height: 232px;
+    left: 650px;
+    top: 400px;
+    font-family: 'SUIT-Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size:  20px;
+    line-height: 40px;
+    color: #FFFFFF;
+    opacity: 0; 
+    transition: opacity 1s ease-in-out 2s; 
+}
+
+
+
+
+
+#container3 {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    background-color: rgb(0, 0, 0);
+}
+
+#cont3title{
+
+    z-index: 9;
+    position: absolute;
+width: 357px;
+height: 43px;
+left: 200px;
+top: 110px;
+
+font-family: 'Chakra Petch';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 47px;
+color: #FFFFFF;
+}
+
+#cont3data1{
+z-index: 10;
+position: absolute;
+left: 280px;
+top: 209px;
+
+font-family: 'Chakra Petch';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 26px;
+color: #FFFFFF;
+}
+
+#cont3data2{
+    z-index: 11;
+position: absolute;
+left: 545px;
+top: 209px;
+
+font-family: 'SUIT-Regular';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 26px;
+text-align: right;
+
+color: #FFFFFF;
+}
+
+#selecy{
+    position: absolute;
+    width: 210px;
+height: 53px;
+left: 1395px;
+top: 200px;
+background: #000DFF;
+
+
+}
+
+#select_p{
+position: absolute;
+left: 1409px;
+top: 215px;
+color: #FFFFFF;
+font-family: 'Chakra Petch';
+font-style: normal;
+font-weight: 600;
+font-size: 26px;
+line-height: 26px;
+margin: 0;
+
+}
+
+#cont3about{
+    position: absolute;
+    left: 1455px;
+    top: 680px;
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 26px;
+    color: #FFFFFF;
+    }
+    
+    #cont3box{
+        position: absolute;
+    width: 48px;
+    height: 50px;
+    left: 1390px;
+    top: 688px;
+    
+    background: #000DFF;
+    }
+    
+    #cont3text{
+    position: absolute;
+    width: 358px;
+    height: 148px;
+    left: 1450px;
+    top: 720px;
+    font-family: 'SUIT-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    /* or 179% */
+    
+    color: #FFFFFF;
+    
+    }
+
+
+.year-buttons button {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    text-align: center;
+    color: #fff; /* 기본 글자색을 하얀색으로 설정 */
+    font-weight: bold;
+    font-size: 2rem;
+    background-color: transparent; /* 배경색을 투명으로 설정 */
+    cursor: pointer;
+    transition: color 0.3s, text-shadow 0.3s; /* 색상과 텍스트 그림자의 변화를 부드럽게 만듭니다. */
+}
+
+.year-buttons button:hover {
+    color: #00f; /* 호버 시 글자색을 파란색으로 변경 */
+    text-shadow: 0 0 10px #00f, 0 0 20px #00f, 0 0 30px #00f; /* 파란색 네온 효과를 적용 */
+}
+
+.year-buttons button:active {
+    color: #008; /* 클릭 시 글자색을 진한 파란색으로 변경 */
+}
+
+.year-buttons button:focus {
+    outline: none;
+}
+
+
+#btn-2013 {
+    position: absolute;
+    width: 234px;
+    height: 28px;
+    left: 1380px;
+    top: 280px;
+
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 20px;
+    /* or 56% */
+    text-align: center;
+
+color: #CCCCCC;
+}
+
+#btn-2016 {
+    position: absolute;
+    width: 234px;
+    height: 30px;
+    left: 1380px;
+    top: 340px;
+
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 20px;
+/* or 56% */
+text-align: center;
+}
+
+#btn-2019 {
+    position: absolute;
+    width: 234px;
+    height: 31px;
+    left: 1380px;
+    top: 400px;
+
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 20px;
+    /* or 56% */
+    text-align: center;
+}
+
+#btn-2022 {
+    position: absolute;
+    width: 252px;
+    height: 24px;
+    left: 1371px;
+    top: 460px;
+
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 20px;
+    /* or 56% */
+    text-align: center;
+}
+
+
+
+
+#b1{
+    position: absolute;
+
+left: 0px;
+top: 0px;
+z-index: 4;
+}
+#b3{
+    position: absolute;
+
+    left: 0px;
+    top: 777px;
+}
+#b2{
+    position: absolute;
+
+    left: 1610px;
+    top: 0px;
+
+}
+
+
+#canvasContainer4 {
+    position: relative;
+    background-color: #CFCFCF;
+}
+
+
+/*
+#cont4b1{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+#cont4b2{
+    position: absolute;
+    left: 1610px;
+    top: 0px;
+}
+
+#cont4b3{
+    position: absolute;
+    left: 0px;
+    top: 647px;
+}
+*/
+
+#w1{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+
+}
+
+#w2{
+    position: absolute;
+    height: 660px;
+    left: 1224px;
+    z-index: 5;
+    
+}
+
+#w3{
+    position: absolute;
+    left: 0px;
+    top: 666px;
+}
+#buttons{
+    position: absolute;
+    left: 1386px;
+top: 337px;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+    position: absolute;  /* 변경된 부분 */
+    left: 50%; 
+    top: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 500px;
+    left: 430px;
+}
+
+.buttonContainer button {
+    display: inline-block;
+    margin: 5px 0; /* 버튼의 상하 간격은 5px, 좌우 간격은 0px로 설정합니다. */
+    padding: 10px;
+    border: none;
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+    font-size: 2rem;
+    background-color: transparent;
+    cursor: pointer;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.buttonContainer button:hover {
+    color: #00f;
+    text-shadow: 0 0 10px #00f, 0 0 20px #00f, 0 0 30px #00f;
+}
+
+.buttonContainer button:active {
+    color: #008;
+}
+
+.buttonContainer button:focus {
+    outline: none;
+}
+
+
+#canvasContainer4 canvas { 
+    position: absolute;  
+    top: 100px;           
+    left: 650px;     
+    z-index: 0;
+}
+
+#cont4box{
+    position: absolute;
+width: 180px;
+height: 53px;
+left: 340px;
+top: 170px;
+background: #D9D9D9;
+}
+
+#cont4boxtitle{
+    position: absolute;
+    left: 380px;
+top: 160px;
+font-family: 'Chakra Petch';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 26px;
+text-align: center;
+color: #000AFF;
+}
+
+#cont4title{
+    position: absolute;
+    left: 1280px;
+    top: 180px;
+    font-family: 'Chakra Petch';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 47px;
+z-index: 7;
+color: #FFFFFF;
+}
+
+#strengthValue {
+    position: absolute;
+    font-size: 26px;
+    color: white;
+left: 1405px;
+top: 300px;
+    z-index: 8;
+}
+
+#strength{
+    position: absolute;
+    font-size: 26px;
+    color: white;
+left: 1280px;
+top: 280px;
+    z-index: 9;
+
+    font-family: 'Chakra Petch';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 26px;
+
+
+}
+
+#aboutbox4{
+    position: absolute;
+width: 50px;
+height: 50px;
+left: 1390px;
+top: 688px;
+background: #000DFF;
+}
+
+#about4{
+    position: absolute;
+    left: 1455px;
+    top: 680px;
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 26px;
+    color: #000DFF;
+}
+
+#abouttext4{
+    position: absolute;
+    width: 362px;
+    height: 150px;
+    left: 1450px;
+    top: 725px;
+    font-family: 'SUIT-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    /* or 179% */
+    
+    color: #000DFF;
+}
+
+/* Common styling for all rectangles */
+#con3box1,
+#con3box2,
+#con3box3,
+#con3box4 {
+    box-sizing: border-box;
+    position: absolute;
+    width: 19px;
+    height: 18px;
+    border: 1px solid #FFFFFF;
+    left: 234px;
+}
+
+/* Rectangle 1239 */
+#con3box1 {
+    top: 222px;
+    background: #000DFF;
+    z-index: 13;
+}
+
+/* Rectangle 1240 */
+#con3box2 {
+    top: 251px;
+    background: #757575;
+    z-index: 14;
+}
+
+/* Rectangle 1241 */
+#con3box3 {
+    top: 280px;
+    background: #000000;
+    z-index: 15;
+}
+
+/* Rectangle 1242 */
+#con3box4 {
+    top: 307px;
+    background: #00FFFF;
+    z-index: 16;
+}
+
+.buttonContainer button {
+    font-family: 'SUIT-Regular';
+}
+
+.buttonContainer button, #strengthValue {
+    font-family: 'Chakra Petch';
+}

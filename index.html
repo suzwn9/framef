@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="shape.css">
+    <title>FRAME</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="sketch.js" defer></script>
+    <script src="p5_custom.js" defer></script> 
+    <script src="slide.js" defer></script>
+    <script src="animateShapes.js" defer></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <!---->
+        <div class="container" id="canvasContainer1">
+
+            <div>
+            </div>
+        </div>
+        <div class="container" id="canvasContainer2">
+            <div>
+                <img id="aegja" src="img/aegja.png" alt="">
+                <p id="po1">PROJECT OVERVIEW</p>
+                <p id="po2">데이터 시각화 프로젝트 프레임은 우리가 사람을 만날 때 무의식적으로 갖게 되는<br>
+                    편견적인 시각을 조명합니다. 사회학적 맥락의 ’프레임’은 세상을 이해하고 해석하는<br>
+                    개념적 구조나 체계를 가리키는데 이 중 ‘직업’은 특히 한 사람에 대한 인식에
+                    가장 큰<br> 영향을 미치는 프레임입니다. 이 프로젝트는 우리가 가지고 있는 
+                    직업에 관한 무의식<br>적인 편견과 실제 사이의 간극을 데이터를 통해 살펴보고,
+                    시각화하여 보여드립니다. <br>이를 통해 우리가 새로운 시각과 인식을 얻을 수 있길
+                    기대합니다.</p>
+                <img id="aegja2" src="img/aegja_f.png" alt="">
+            </div>
+        </div>
+        <div class="container" id="canvasContainer3">
+            <canvas id="Canvas1"></canvas>
+            <div class="year-buttons">
+                <button id="btn-2013" data-year="2013">2013</button>
+                <button id="btn-2016" data-year="2016">2016</button>
+                <button id="btn-2019" data-year="2019">2019</button>
+                <button id="btn-2022" data-year="2022">2022</button>
+            </div>
+            
+            <img id="b1" src="img/blue1.png" alt="">
+            <p id="cont3title">PROJECT 1 : ACTUAL</p>
+            <p id="cont3data1">기초산업<br>
+                제조 및 건설<br>
+                서비스업<br>
+                전문 및 공공 서비스</p>
+            <p id="cont3data2"></p>
+            <img id="b2" src="img/blue2.png" alt="">
+            <img id="b3" src="img/blue3.png" alt="">
+            <div id="selecy"></div>
+            <p id="select_p">SELECT YEARS</p>
+            <div id="con3box1"></div>
+            <div id="con3box2"></div>
+            <div id="con3box3"></div>
+            <div id="con3box4"></div>
+
+            <div id="cont3box"></div>
+            <h1 id="cont3about">ABOUT</h1>
+            <p id="cont3text">이 데이터는 2013년도 부터 2023년도의 직업별 취업자를 확인할 수 있습니다. 
+                우리는 항상 사무 종사자,관리자,전문가의 취업률에만 관심을 가지지만 
+                그 이외의 직업군도 많이 존재한다는것을 잊고는 합니다. 
+                우리 사회는 '사무직'이 아닌 직업을 지워버리는 경향이 있습니다.
+                하지만 실제 데이터를 통해 우리는 우리가 지워버린 사람들의 존재를 확인할 수 있습니다.</p>
+        </div>
+        <div class="container" id="canvasContainer4">
+            <img id="w1" src="img/w1.png" alt="">
+            <img id="w2" src="img/w2.png" alt="">
+            <img id="w3" src="img/w3.png" alt="">
+            <div id="cont4box"></div>
+            <p id="cont4boxtitle">SELECT</p>
+            <p id="cont4title">PROJECT 2 : FRAGMENT</p>
+            <div id="strengthValue"></div>
+            <p id="strength">strength :</p>
+            <div id="aboutbox4"></div>
+            <p id="about4">ABOUT</p>
+            <p id="abouttext4">
+                7개의 직종별 직업 위세 인식 점수를 종사자와 비종사자 그리고 전체의 값을 알 
+                수 있는 데이터를 토대로 이루어진 데이터 시각화입니다. 실제 데이터 입력값은
+                종사자를 기준으로 입력되었으며 이를 통해서 직업 위세 점수에 따라 달라지는
+                사람들의 시선을 그 값을 활용한 이미지 분열을 통해 시각적으로 표현하였습니
+                다. 이러한 왜곡은 타인뿐만이 아니라 자기 자신을 볼 때도 적용될 수 있습니다.
+            </p>
+            
+        </div>
+    </div>
+
+
+</body>
+</html>
